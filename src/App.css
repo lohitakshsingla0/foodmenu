@@ -1,0 +1,22 @@
+
+
+.container {
+	display: grid;
+	display: flex;
+	align-items: center;
+	background: #131313;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100%;
+	margin-block: 2rem;
+	
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+	
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
