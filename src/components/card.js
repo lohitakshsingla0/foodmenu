@@ -1,22 +1,26 @@
 import React from 'react';
-import './card.css'
+import './card.css';
+//import { useState, useEffect } from 'react';
 
 
-const CardApp=({cardData})=>{
+const  CardApp = ({cardData}) => {
+
+
   return (
     
-    cardData.map((attribute) => (
+	  
+    
       
       <div class="card">
         
         <div class="card__header">
-          <img src={attribute.strCategoryThumb} alt="card__image" class="card__image" ></img>
+          <img src={cardData.strCategoryThumb} alt="card__image" class="card__image" ></img>
         </div>
 
         <div class="card__body">
           <span class="tag tag-blue">Food</span>
-          <h4>{attribute.strCategory}</h4>
-          <p>{attribute.strCategoryDescription}</p>
+          <h4>{cardData.strCategory}</h4>
+          <p>{cardData.strCategoryDescription}</p>
         </div>
 
         <div class="card__footer">
@@ -30,7 +34,7 @@ const CardApp=({cardData})=>{
       </div>
      
    
-    ))
+
    
   );
 }

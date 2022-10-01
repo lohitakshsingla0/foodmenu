@@ -25,7 +25,7 @@
 .card {
   margin:5px;
     height: 500px;;
-    width: 350px;
+    width: 400px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
 
 p{
   justify-content: center;
-  width: 300px;
+  width: 370px;
   height: 150px;
 
     text-overflow: ellipsis;
@@ -110,3 +110,4 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
 .user__info {
   color: #666;
 }
+
