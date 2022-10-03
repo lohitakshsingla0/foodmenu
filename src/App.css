@@ -4,13 +4,13 @@ body{
 
 .container {
 	background: #131313;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    
     align-items: center;
 	justify-content: center;
     height: 100%;
 	float: none;
-    padding: 10rem 0;
+   
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr;
@@ -39,3 +39,105 @@ body{
 	}
   
   }
+
+/*Button Css*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+button {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 30px;
+  background: #1A2929;
+}
+.button-search-wrapper{
+  display:flex;
+  justify-content: space-between;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.input-container > input{
+  height: 37px;
+  border-radius: 15px;
+  width: 250px
+}
+
+
+
+
+span {
+  display: block;
+  padding: 10px 80px;
+}
+
+button::before,
+button::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #54E6E7;
+}
+
+span::before,
+span::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #54E6E7;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 100%;
+}
+
+button:hover span::before,
+button:hover span::after {
+  height: 100%;
+}
+
+button::after {
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+button span::after {
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+button::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+button span::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+
+
+/*Responsive button and search*/
+
+.services__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
